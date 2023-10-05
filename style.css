@@ -1,0 +1,106 @@
+@font-face {
+    font-family: "Inter";
+    src: url("Inter-VariableFont_slnt,wght.ttf") format('ttf');
+}
+
+body{
+    /*margin: 0;*/
+    font-family: "Inter", "sans-serif";
+}
+
+.navBar{
+    list-style-type: none;
+    margin: 0;
+    /*padding: 0;*/
+    border: 1px solid #c5c0c0;
+    width: fit-content;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding-right: -30px;
+    padding-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0.2px 1px 5px 1px #c5c0c0;
+    height: 23px;
+}
+
+
+.navBar li:nth-child(3) button{
+    border: none;
+    /*background: none;*/
+    outline: none;
+    display: flex;
+    align-items: center;
+    /*margin-top: 3px;*/
+    color: gray;
+    /*margin-top: -0.8px;*/
+    /*justify-content: space-evenly;*/
+    margin-right: 2px;
+}
+
+.navBar li button{
+    background-color: white;
+    border-width: 0; /* Set border width to 0 for all sides */
+    border-right-width: 2px; /* Set the width of the right border */
+    border-right-style: solid; /* Set the style of the right border (solid, dashed, etc.) */
+    border-right-color: #000;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 15px;
+}
+
+.svgWrapper{
+    border: 2px solid #FF5A5F;
+    border-radius: 20px;
+}
+
+
+.navBarButton{
+    display: flex;         /* Use flex layout */
+    align-items: center;
+    justify-content: space-between;
+    /*width: 50px;*/
+    /*background: transparent;*/
+    cursor: pointer;
+    margin: 0;
+    text-align: inherit;
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    transition: box-shadow 0.2s cubic-bezier(0.2,0,0,1);
+    height: 41px;
+    border-radius: 20px;
+}
+
+/*.navi{*/
+/*    display: grid;*/
+/*    grid-template-columns: repeat(3, 1fr); !* Create 3 equal-width columns *!*/
+/*    justify-items: center;*/
+/*}*/
+
+.navi{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    position: relative;
+}
+
+.left{
+    /*margin-left: -330px;*/
+    flex: 1 0 140px;
+
+}
+
+
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1 0 140px;
+    height: fit-content;
+}
+
+.middle{
+    flex: 0 1 auto;
+}
