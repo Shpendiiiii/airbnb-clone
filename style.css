@@ -1,11 +1,16 @@
 @font-face {
-    font-family: "Inter";
-    src: url("Inter-VariableFont_slnt,wght.ttf") format('ttf');
+    font-family: "AR One Sans";
+    src: url("AROneSans-VariableFont_ARRR,wght.ttf") format('ttf'),
+            url("static/AROneSans-Regular.ttf"),
+            url("static/AROneSans-Bold.ttf"),
+            url("static/AROneSans-SemiBold.ttf"),
+            url("static/AROneSans-Medium.ttf");
+    font-weight: normal;
 }
 
 body {
     margin: 0;
-    font-family: "Inter", "sans-serif";
+    font-family: "AR One Sans", monospace;
     height: 100vh;
 }
 
@@ -156,6 +161,7 @@ hr {
     border-width: 0; /* Set border width to 0 for all sides */
     font-size: 15px;
     transition: opacity 0.3s ease;
+    width: 50px;
 }
 
 .items img {
@@ -174,6 +180,12 @@ hr {
     color: black;
 }
 
+.accomItems div .items p {
+    font-size: 12px;
+    word-wrap: break-word;
+}
+
+
 .accomItems div:nth-child(1) .items {
     border-bottom-color: #717171;
     border-bottom-width: 2px; /* Set the width of the right border */
@@ -181,10 +193,6 @@ hr {
     border-bottom-color: #717171;
 }
 
-/*.items p {*/
-/*    font-size: 12px;*/
-/*    margin-top: 4px;*/
-/*}*/
 
 .items:hover img {
     opacity: 1;
@@ -289,20 +297,32 @@ label:active:after {
 
 .houses{
     display: grid;
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-columns: 3fr;
-    gap: 0px 16px;
+    grid-template-columns: repeat(5, 1fr);
+    /*gap: 8px;*/
+    grid-column-gap: 33px;
     margin-left: 15px;
-    margin-top: 10px
+    margin-top: 18px;
+    justify-items: center;
+    /*max-width: fit-content;*/
 }
 
-.houseItem img{
+.imgContainer{
     border-radius: 20px;
-    width: 310px;
-    height: 295px;
+    max-width: 312px;
+    max-height: 296px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+}
+.houseItem img{
+    width: 100%;
+    height: auto;
+
 }
 
 .houseItem{
+    width: fit-content;
 
 }
 
@@ -314,13 +334,15 @@ label:active:after {
     margin-top: -10px;
 }
 
-/*.houseItem p > *:not(:first-child){*/
-/*    line-height: 7;*/
-/*}*/
+footer{
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*bottom: 0;*/
+    width: 100%;
+    /*background-color: red;*/
+    /*color: white;*/
+    text-align: center;
+    font-size: 12px;
+    margin-top: auto
 
-
-
-/*.houseItem p{*/
-/*    display: inline-block;*/
-/*    margin-top: 5px;*/
-/*}*/
+}
