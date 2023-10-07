@@ -78,11 +78,6 @@ body {
     border-radius: 20px;
 }
 
-/*.navi{*/
-/*    display: grid;*/
-/*    grid-template-columns: repeat(3, 1fr); !* Create 3 equal-width columns *!*/
-/*    justify-items: center;*/
-/*}*/
 
 .navi {
     display: flex;
@@ -190,7 +185,6 @@ hr {
     border-bottom-color: #717171;
     border-bottom-width: 2px; /* Set the width of the right border */
     border-bottom-style: solid; /* Set the style of the right border (solid, dashed, etc.) */
-    border-bottom-color: #717171;
 }
 
 
@@ -303,7 +297,6 @@ label:active:after {
     margin-left: 15px;
     margin-top: 18px;
     justify-items: center;
-    /*max-width: fit-content;*/
 }
 
 .imgContainer{
@@ -330,17 +323,13 @@ label:active:after {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: 3fr;
-    gap: 0px 16px;
+    gap: 0 16px;
     margin-top: -10px;
 }
 
 footer{
-    /*position: absolute;*/
-    /*left: 0;*/
-    /*bottom: 0;*/
     width: 100%;
-    /*background-color: red;*/
-    /*color: white;*/
+
     text-align: center;
     font-size: 12px;
     margin-top: auto
