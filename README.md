@@ -14,4 +14,4 @@ To run this project locally, follow these steps:
 
    ```bash
    git clone https://github.com/Shpendiiiii/airbnb-clone
-   xdg-open index.html
+   xdg-open .
